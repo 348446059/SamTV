@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-1102" y="47"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="YgD-6R-RPC">
             <objects>
-                <viewController id="2XD-UP-uZg" sceneMemberID="viewController">
+                <viewController id="2XD-UP-uZg" customClass="HomeViewController" customModule="SamTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVe-tu-r7i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

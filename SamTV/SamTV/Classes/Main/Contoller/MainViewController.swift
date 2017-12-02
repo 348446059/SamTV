@@ -13,7 +13,10 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addChildVC("Home")
+        addChildVC("Rank")
+        addChildVC("Discover")
+        addChildVC("Profile")
     }
 
     func addChildVC(_ storyName:String)  {
