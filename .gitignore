@@ -21,13 +21,13 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
-
+*.framework
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
 *.dSYM.zip
 *.dSYM
-
+*.framework
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace

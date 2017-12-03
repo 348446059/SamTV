@@ -13,7 +13,7 @@
         <!--直播-->
         <scene sceneID="9Rf-9o-ceU">
             <objects>
-                <navigationController id="kUd-jU-GLe" sceneMemberID="viewController">
+                <navigationController id="kUd-jU-GLe" customClass="SamNavigationController" customModule="SamTV" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="直播" image="live-n" selectedImage="live-p" id="8n5-13-9mr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bpY-yM-DRb">
@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-1102" y="47"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="YgD-6R-RPC">
             <objects>
-                <viewController id="2XD-UP-uZg" sceneMemberID="viewController">
+                <viewController id="2XD-UP-uZg" customClass="HomeViewController" customModule="SamTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVe-tu-r7i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
