@@ -25,7 +25,9 @@ class AnchorViewController: UIViewController {
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.dataSource = self
+
         collectionView.delegate = self
+
         collectionView.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: KAnchorCellID)
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         collectionView.backgroundColor = UIColor.white
@@ -64,7 +66,11 @@ extension AnchorViewController :WaterfallLayoutDataSource{
     
 }
 
+
+
+
 extension AnchorViewController:UICollectionViewDataSource,UICollectionViewDelegate{
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeVM.anchorModels.count
     }
@@ -79,6 +85,7 @@ extension AnchorViewController:UICollectionViewDataSource,UICollectionViewDelega
         return cell
         
     }
+
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

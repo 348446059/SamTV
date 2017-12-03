@@ -30,11 +30,13 @@
 		095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DCE5A1FD2982100BFAC94 /* AnchorViewController.swift */; };
 		095DCE5F1FD29A6F00BFAC94 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DCE5D1FD29A6F00BFAC94 /* HomeViewCell.swift */; };
 		095DCE601FD29A6F00BFAC94 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DCE5E1FD29A6F00BFAC94 /* HomeViewCell.xib */; };
+
 		0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967A7221FD393E5003AF516 /* AnimManager.swift */; };
 		0967A7261FD3AFFE003AF516 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967A7251FD3AFFE003AF516 /* RoomViewModel.swift */; };
 		0967A7291FD3F832003AF516 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */; };
 		0967A72B1FD3F867003AF516 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72A1FD3F867003AF516 /* libz.tbd */; };
 		0967A72D1FD3F87F003AF516 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */; };
+
 		0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */; };
 		0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847C1FD0EC7500AA02A4 /* ViewController.swift */; };
 		099684801FD0EC7500AA02A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996847E1FD0EC7500AA02A4 /* Main.storyboard */; };
@@ -75,11 +77,13 @@
 		095DCE5A1FD2982100BFAC94 /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		095DCE5D1FD29A6F00BFAC94 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		095DCE5E1FD29A6F00BFAC94 /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+
 		0967A7221FD393E5003AF516 /* AnimManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimManager.swift; sourceTree = "<group>"; };
 		0967A7251FD3AFFE003AF516 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 		0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		0967A72A1FD3F867003AF516 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+
 		099684771FD0EC7500AA02A4 /* SamTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0996847C1FD0EC7500AA02A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +110,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5BC2DAD90792F0FE4A7854 /* Pods_SamTV.framework in Frameworks */,
+
 				0967A72B1FD3F867003AF516 /* libz.tbd in Frameworks */,
 				0967A72D1FD3F87F003AF516 /* libsqlite3.0.tbd in Frameworks */,
 				0967A7291FD3F832003AF516 /* IJKMediaFramework.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +178,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+
 		0967A7241FD3AFE3003AF516 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +195,7 @@
 			path = IJKPlayer;
 			sourceTree = "<group>";
 		};
+
 		0996846E1FD0EC7500AA02A4 = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				095DCE541FD2547100BFAC94 /* NetworkTools.swift */,
+
 				0967A7221FD393E5003AF516 /* AnimManager.swift */,
+
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -367,8 +377,10 @@
 		377B0B9FBD62642D68DBF9E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+
 				0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */,
 				0967A72A1FD3F867003AF516 /* libz.tbd */,
+
 				380D07F1AEBF0F71FF3BF672 /* Pods_SamTV.framework */,
 			);
 			name = Frameworks;
@@ -526,7 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */,
+
 				0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */,
+
 				095DCE511FD24D3F00BFAC94 /* BaseModel.swift in Sources */,
 				095DCE591FD2934100BFAC94 /* HomeViewModel.swift in Sources */,
 				095DCE571FD2927300BFAC94 /* AnchorModel.swift in Sources */,
@@ -534,7 +548,9 @@
 				095DCE411FD23FB400BFAC94 /* HYTitleStyle.swift in Sources */,
 				0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */,
 				0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */,
+
 				0967A7261FD3AFFE003AF516 /* RoomViewModel.swift in Sources */,
+
 				092740DC1FD12F9E00F1A2DA /* HomeViewController.swift in Sources */,
 				095DCE401FD23FB400BFAC94 /* HYTitleView.swift in Sources */,
 				092740DE1FD131FE00F1A2DA /* SamNavigationController.swift in Sources */,
