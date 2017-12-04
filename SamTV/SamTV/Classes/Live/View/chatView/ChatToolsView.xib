@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatToolsView" customModule="SamTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="愉快地和主播聊一聊吧" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaJ-3f-8ZM">
+                    <rect key="frame" x="5" y="5" width="300" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidEdit:" destination="iN0-l3-epB" eventType="editingDidEnd" id="aYK-2b-QAf"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-aD-lM8">
+                    <rect key="frame" x="310" y="5" width="60" height="34"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="im8-lt-Fcz"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sendBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cbg-bb-bd8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QaJ-3f-8ZM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="5BH-Tk-hQQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zet-aD-lM8" secondAttribute="bottom" constant="5" id="5mA-Nt-ylo"/>
+                <constraint firstItem="QaJ-3f-8ZM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="7eC-yr-zCx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zet-aD-lM8" secondAttribute="trailing" constant="5" id="gVA-DF-UGV"/>
+                <constraint firstItem="Zet-aD-lM8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="rGq-5h-dSa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QaJ-3f-8ZM" secondAttribute="bottom" constant="5" id="urI-6O-nIm"/>
+                <constraint firstItem="Zet-aD-lM8" firstAttribute="leading" secondItem="QaJ-3f-8ZM" secondAttribute="trailing" constant="5" id="vhL-jz-1uO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="inputTextField" destination="QaJ-3f-8ZM" id="cnh-BO-v5k"/>
+                <outlet property="sendMsgBtn" destination="Zet-aD-lM8" id="2QO-Xp-IFf"/>
+            </connections>
+        </view>
+    </objects>
+</document>

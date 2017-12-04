@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091F29E71FD4DB8B0035F949 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29E51FD4DB8B0035F949 /* EmoticonViewCell.swift */; };
+		091F29E81FD4DB8B0035F949 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F29E61FD4DB8B0035F949 /* EmoticonViewCell.xib */; };
+		091F29EA1FD4DCA20035F949 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29E91FD4DCA20035F949 /* EmoticonView.swift */; };
+		091F29EC1FD4E2300035F949 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29EB1FD4E2300035F949 /* EmoticonPackage.swift */; };
+		091F29EE1FD4E36F0035F949 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29ED1FD4E36F0035F949 /* EmoticonViewModel.swift */; };
+		091F29F21FD4F84D0035F949 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29F01FD4F84D0035F949 /* GiftViewCell.swift */; };
+		091F29F31FD4F84D0035F949 /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F29F11FD4F84D0035F949 /* GiftViewCell.xib */; };
+		091F29F51FD50A990035F949 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29F41FD50A990035F949 /* GiftModel.swift */; };
+		091F29F71FD50BA10035F949 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29F61FD50BA10035F949 /* GiftViewModel.swift */; };
+		091F29F91FD50C240035F949 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29F81FD50C240035F949 /* GiftPackage.swift */; };
+		091F29FB1FD511060035F949 /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29FA1FD511060035F949 /* GiftListView.swift */; };
+		091F29FD1FD511270035F949 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F29FC1FD511270035F949 /* GiftListView.xib */; };
+		091F2A001FD51C810035F949 /* SocialShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29FF1FD51C810035F949 /* SocialShareView.swift */; };
+		091F2A021FD51C900035F949 /* SocialShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F2A011FD51C900035F949 /* SocialShareView.xib */; };
+		091F2A051FD520A50035F949 /* MoreInfoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F2A041FD520A50035F949 /* MoreInfoButton.swift */; };
 		092740D51FD0FD3100F1A2DA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092740D41FD0FD3100F1A2DA /* Const.swift */; };
 		092740D81FD0FDC800F1A2DA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092740D71FD0FDC800F1A2DA /* NibLoadable.swift */; };
 		092740DA1FD0FEE500F1A2DA /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092740D91FD0FEE500F1A2DA /* Emitterable.swift */; };
@@ -30,13 +45,15 @@
 		095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DCE5A1FD2982100BFAC94 /* AnchorViewController.swift */; };
 		095DCE5F1FD29A6F00BFAC94 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DCE5D1FD29A6F00BFAC94 /* HomeViewCell.swift */; };
 		095DCE601FD29A6F00BFAC94 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095DCE5E1FD29A6F00BFAC94 /* HomeViewCell.xib */; };
-
+		095E859F1FD4D5BB00870BF4 /* UITextField-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095E859E1FD4D5BB00870BF4 /* UITextField-Extension.swift */; };
+		095E85A21FD4D7B400870BF4 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095E85A11FD4D7B400870BF4 /* ChatToolsView.swift */; };
+		095E85A41FD4D7C700870BF4 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095E85A31FD4D7C700870BF4 /* ChatToolsView.xib */; };
+		095E85A61FD4DA6800870BF4 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095E85A51FD4DA6800870BF4 /* Emoticon.swift */; };
 		0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967A7221FD393E5003AF516 /* AnimManager.swift */; };
 		0967A7261FD3AFFE003AF516 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967A7251FD3AFFE003AF516 /* RoomViewModel.swift */; };
 		0967A7291FD3F832003AF516 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */; };
 		0967A72B1FD3F867003AF516 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72A1FD3F867003AF516 /* libz.tbd */; };
 		0967A72D1FD3F87F003AF516 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */; };
-
 		0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */; };
 		0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847C1FD0EC7500AA02A4 /* ViewController.swift */; };
 		099684801FD0EC7500AA02A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996847E1FD0EC7500AA02A4 /* Main.storyboard */; };
@@ -50,10 +67,27 @@
 		099684A71FD0F7DE00AA02A4 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099684A61FD0F7DE00AA02A4 /* Discover.storyboard */; };
 		099684A91FD0F86C00AA02A4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099684A81FD0F86C00AA02A4 /* Profile.storyboard */; };
 		09D403B01FD141BE00C128F1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D403AF1FD141BE00C128F1 /* UIColor+Extension.swift */; };
+		09E39F8C1FD52CC200600D8E /* MoreInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E39F8B1FD52CC200600D8E /* MoreInfoView.swift */; };
+		09E39F8E1FD52CD500600D8E /* MoreInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E39F8D1FD52CD500600D8E /* MoreInfoView.xib */; };
 		4B5BC2DAD90792F0FE4A7854 /* Pods_SamTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380D07F1AEBF0F71FF3BF672 /* Pods_SamTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091F29E51FD4DB8B0035F949 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		091F29E61FD4DB8B0035F949 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
+		091F29E91FD4DCA20035F949 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		091F29EB1FD4E2300035F949 /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		091F29ED1FD4E36F0035F949 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		091F29F01FD4F84D0035F949 /* GiftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		091F29F11FD4F84D0035F949 /* GiftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		091F29F41FD50A990035F949 /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		091F29F61FD50BA10035F949 /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		091F29F81FD50C240035F949 /* GiftPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		091F29FA1FD511060035F949 /* GiftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		091F29FC1FD511270035F949 /* GiftListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		091F29FF1FD51C810035F949 /* SocialShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialShareView.swift; sourceTree = "<group>"; };
+		091F2A011FD51C900035F949 /* SocialShareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialShareView.xib; sourceTree = "<group>"; };
+		091F2A041FD520A50035F949 /* MoreInfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoButton.swift; sourceTree = "<group>"; };
 		092740D41FD0FD3100F1A2DA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		092740D71FD0FDC800F1A2DA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		092740D91FD0FEE500F1A2DA /* Emitterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
@@ -77,13 +111,15 @@
 		095DCE5A1FD2982100BFAC94 /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		095DCE5D1FD29A6F00BFAC94 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		095DCE5E1FD29A6F00BFAC94 /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
-
+		095E859E1FD4D5BB00870BF4 /* UITextField-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField-Extension.swift"; sourceTree = "<group>"; };
+		095E85A11FD4D7B400870BF4 /* ChatToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		095E85A31FD4D7C700870BF4 /* ChatToolsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		095E85A51FD4DA6800870BF4 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		0967A7221FD393E5003AF516 /* AnimManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimManager.swift; sourceTree = "<group>"; };
 		0967A7251FD3AFFE003AF516 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 		0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		0967A72A1FD3F867003AF516 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-
 		099684771FD0EC7500AA02A4 /* SamTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0996847C1FD0EC7500AA02A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +135,8 @@
 		099684A61FD0F7DE00AA02A4 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		099684A81FD0F86C00AA02A4 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		09D403AF1FD141BE00C128F1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		09E39F8B1FD52CC200600D8E /* MoreInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoView.swift; sourceTree = "<group>"; };
+		09E39F8D1FD52CD500600D8E /* MoreInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreInfoView.xib; sourceTree = "<group>"; };
 		380D07F1AEBF0F71FF3BF672 /* Pods_SamTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5886B52E5208B55016E857FE /* Pods-SamTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SamTV/Pods-SamTV.debug.xcconfig"; sourceTree = "<group>"; };
 		B68ACD04B4199574C726AA76 /* Pods-SamTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SamTV/Pods-SamTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,17 +148,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5BC2DAD90792F0FE4A7854 /* Pods_SamTV.framework in Frameworks */,
-
 				0967A72B1FD3F867003AF516 /* libz.tbd in Frameworks */,
 				0967A72D1FD3F87F003AF516 /* libsqlite3.0.tbd in Frameworks */,
 				0967A7291FD3F832003AF516 /* IJKMediaFramework.framework in Frameworks */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091F29EF1FD4F81B0035F949 /* GittView */ = {
+			isa = PBXGroup;
+			children = (
+				091F29F01FD4F84D0035F949 /* GiftViewCell.swift */,
+				091F29F11FD4F84D0035F949 /* GiftViewCell.xib */,
+				091F29FA1FD511060035F949 /* GiftListView.swift */,
+				091F29FC1FD511270035F949 /* GiftListView.xib */,
+			);
+			path = GittView;
+			sourceTree = "<group>";
+		};
+		091F29FE1FD51C550035F949 /* shareView */ = {
+			isa = PBXGroup;
+			children = (
+				091F29FF1FD51C810035F949 /* SocialShareView.swift */,
+				091F2A011FD51C900035F949 /* SocialShareView.xib */,
+			);
+			path = shareView;
+			sourceTree = "<group>";
+		};
+		091F2A031FD520860035F949 /* MoreView */ = {
+			isa = PBXGroup;
+			children = (
+				091F2A041FD520A50035F949 /* MoreInfoButton.swift */,
+				09E39F8B1FD52CC200600D8E /* MoreInfoView.swift */,
+				09E39F8D1FD52CD500600D8E /* MoreInfoView.xib */,
+			);
+			path = MoreView;
+			sourceTree = "<group>";
+		};
 		092740D31FD0FD1900F1A2DA /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,11 +244,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-
+		095E85A01FD4D78300870BF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				091F2A031FD520860035F949 /* MoreView */,
+				091F29FE1FD51C550035F949 /* shareView */,
+				091F29EF1FD4F81B0035F949 /* GittView */,
+				095E85A71FD4DACA00870BF4 /* chatView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		095E85A71FD4DACA00870BF4 /* chatView */ = {
+			isa = PBXGroup;
+			children = (
+				095E85A11FD4D7B400870BF4 /* ChatToolsView.swift */,
+				095E85A31FD4D7C700870BF4 /* ChatToolsView.xib */,
+				091F29E91FD4DCA20035F949 /* EmoticonView.swift */,
+				091F29E51FD4DB8B0035F949 /* EmoticonViewCell.swift */,
+				091F29E61FD4DB8B0035F949 /* EmoticonViewCell.xib */,
+			);
+			path = chatView;
+			sourceTree = "<group>";
+		};
 		0967A7241FD3AFE3003AF516 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				0967A7251FD3AFFE003AF516 /* RoomViewModel.swift */,
+				091F29ED1FD4E36F0035F949 /* EmoticonViewModel.swift */,
+				091F29F61FD50BA10035F949 /* GiftViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,7 +285,6 @@
 			path = IJKPlayer;
 			sourceTree = "<group>";
 		};
-
 		0996846E1FD0EC7500AA02A4 = {
 			isa = PBXGroup;
 			children = (
@@ -270,9 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				095DCE541FD2547100BFAC94 /* NetworkTools.swift */,
-
 				0967A7221FD393E5003AF516 /* AnimManager.swift */,
-
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -296,6 +383,7 @@
 		099684931FD0F45300AA02A4 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				095E85A01FD4D78300870BF4 /* View */,
 				0967A7241FD3AFE3003AF516 /* ViewModel */,
 				0996849B1FD0F5B100AA02A4 /* Model */,
 				0996849A1FD0F5A900AA02A4 /* Controller */,
@@ -352,6 +440,10 @@
 		0996849B1FD0F5B100AA02A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				095E85A51FD4DA6800870BF4 /* Emoticon.swift */,
+				091F29EB1FD4E2300035F949 /* EmoticonPackage.swift */,
+				091F29F41FD50A990035F949 /* GiftModel.swift */,
+				091F29F81FD50C240035F949 /* GiftPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				09D403AF1FD141BE00C128F1 /* UIColor+Extension.swift */,
+				095E859E1FD4D5BB00870BF4 /* UITextField-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -377,10 +470,8 @@
 		377B0B9FBD62642D68DBF9E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-
 				0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */,
 				0967A72A1FD3F867003AF516 /* libz.tbd */,
-
 				380D07F1AEBF0F71FF3BF672 /* Pods_SamTV.framework */,
 			);
 			name = Frameworks;
@@ -459,16 +550,22 @@
 			files = (
 				099684A41FD0F76400AA02A4 /* Rank.storyboard in Resources */,
 				099684851FD0EC7500AA02A4 /* LaunchScreen.storyboard in Resources */,
+				091F29FD1FD511270035F949 /* GiftListView.xib in Resources */,
 				099684A91FD0F86C00AA02A4 /* Profile.storyboard in Resources */,
 				095DCE4C1FD24CB000BFAC94 /* types.plist in Resources */,
 				099684A21FD0F67300AA02A4 /* Home.storyboard in Resources */,
 				0996848C1FD0F28C00AA02A4 /* Assets.xcassets in Resources */,
 				099684801FD0EC7500AA02A4 /* Main.storyboard in Resources */,
+				095E85A41FD4D7C700870BF4 /* ChatToolsView.xib in Resources */,
+				091F2A021FD51C900035F949 /* SocialShareView.xib in Resources */,
 				099684A71FD0F7DE00AA02A4 /* Discover.storyboard in Resources */,
 				0996849F1FD0F5F400AA02A4 /* RoomViewController.xib in Resources */,
+				091F29E81FD4DB8B0035F949 /* EmoticonViewCell.xib in Resources */,
 				095DCE601FD29A6F00BFAC94 /* HomeViewCell.xib in Resources */,
 				095DCE4E1FD24CB000BFAC94 /* QHNormalEmotionSort.plist in Resources */,
+				09E39F8E1FD52CD500600D8E /* MoreInfoView.xib in Resources */,
 				095DCE4D1FD24CB000BFAC94 /* QHSohuGifSort.plist in Resources */,
+				091F29F31FD4F84D0035F949 /* GiftViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,34 +635,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */,
-
 				0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */,
-
+				091F29E71FD4DB8B0035F949 /* EmoticonViewCell.swift in Sources */,
 				095DCE511FD24D3F00BFAC94 /* BaseModel.swift in Sources */,
 				095DCE591FD2934100BFAC94 /* HomeViewModel.swift in Sources */,
 				095DCE571FD2927300BFAC94 /* AnchorModel.swift in Sources */,
 				099684991FD0F4DE00AA02A4 /* MainViewController.swift in Sources */,
 				095DCE411FD23FB400BFAC94 /* HYTitleStyle.swift in Sources */,
+				091F29EA1FD4DCA20035F949 /* EmoticonView.swift in Sources */,
 				0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */,
 				0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */,
-
 				0967A7261FD3AFFE003AF516 /* RoomViewModel.swift in Sources */,
-
 				092740DC1FD12F9E00F1A2DA /* HomeViewController.swift in Sources */,
+				095E85A61FD4DA6800870BF4 /* Emoticon.swift in Sources */,
 				095DCE401FD23FB400BFAC94 /* HYTitleView.swift in Sources */,
 				092740DE1FD131FE00F1A2DA /* SamNavigationController.swift in Sources */,
+				091F29FB1FD511060035F949 /* GiftListView.swift in Sources */,
 				095DCE481FD2402D00BFAC94 /* WaterfallLayout.swift in Sources */,
 				095DCE421FD23FB400BFAC94 /* HYPageView.swift in Sources */,
 				095DCE531FD24DF000BFAC94 /* HomeType.swift in Sources */,
 				092740D81FD0FDC800F1A2DA /* NibLoadable.swift in Sources */,
+				091F2A001FD51C810035F949 /* SocialShareView.swift in Sources */,
+				095E859F1FD4D5BB00870BF4 /* UITextField-Extension.swift in Sources */,
 				095DCE551FD2547100BFAC94 /* NetworkTools.swift in Sources */,
 				0996849E1FD0F5F400AA02A4 /* RoomViewController.swift in Sources */,
 				095DCE5F1FD29A6F00BFAC94 /* HomeViewCell.swift in Sources */,
 				095DCE431FD23FB400BFAC94 /* HYPageCollectionView.swift in Sources */,
+				095E85A21FD4D7B400870BF4 /* ChatToolsView.swift in Sources */,
+				091F29F21FD4F84D0035F949 /* GiftViewCell.swift in Sources */,
+				091F29F91FD50C240035F949 /* GiftPackage.swift in Sources */,
+				091F29EC1FD4E2300035F949 /* EmoticonPackage.swift in Sources */,
+				091F29F51FD50A990035F949 /* GiftModel.swift in Sources */,
 				092740D51FD0FD3100F1A2DA /* Const.swift in Sources */,
 				095DCE451FD23FB400BFAC94 /* HYPageCollectionViewLayout.swift in Sources */,
+				091F2A051FD520A50035F949 /* MoreInfoButton.swift in Sources */,
 				092740DA1FD0FEE500F1A2DA /* Emitterable.swift in Sources */,
+				091F29F71FD50BA10035F949 /* GiftViewModel.swift in Sources */,
 				09D403B01FD141BE00C128F1 /* UIColor+Extension.swift in Sources */,
+				091F29EE1FD4E36F0035F949 /* EmoticonViewModel.swift in Sources */,
+				09E39F8C1FD52CC200600D8E /* MoreInfoView.swift in Sources */,
 				095DCE441FD23FB400BFAC94 /* HYContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,13 @@
 
 import UIKit
 import IJKMediaFramework
+
+private let KMoreInfoViewH:CGFloat = 90
+private let KGiftListViewH:CGFloat = 320
+private let KSocialShareViewH:CGFloat = 250
+private let KChatToolsViewH:CGFloat = 44
+private let KChatContentViewH:CGFloat = 160
+
 class RoomViewController: UIViewController,Emitterable {
 
     
@@ -28,12 +35,22 @@ class RoomViewController: UIViewController,Emitterable {
     
     @IBOutlet weak var onlineNumLabel: UILabel!
     
+    //MARK:懒加载属性
+    fileprivate lazy var moreInfoView = MoreInfoView.loadMoreInfoView()
+    
+    fileprivate lazy var socialShareView = SocialShareView.loadSocialShareView()
+    
+    fileprivate lazy var chatToolsView = ChatToolsView.loadChatToolsView()
+    
+    fileprivate lazy var giftListView = GiftListView.loadGiftListView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       setupUI()
+        setupUI()
         loadRoomInfo()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -95,7 +112,7 @@ extension RoomViewController{
 extension RoomViewController{
    fileprivate func setupUI()  {
        setupBlurView()
-    
+       setupBottomView()
        setupInfo()
     }
     
@@ -114,6 +131,35 @@ extension RoomViewController{
     blurView.frame = bgImageView.bounds
     bgImageView.addSubview(blurView)
     }
+    
+   fileprivate func setupBottomView()  {
+    
+    moreInfoView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KMoreInfoViewH)
+    view.addSubview(moreInfoView)
+    
+    socialShareView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KSocialShareViewH)
+    view.addSubview(socialShareView)
+    
+    giftListView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KGiftListViewH)
+    view.addSubview(giftListView)
+    
+    chatToolsView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KChatToolsViewH)
+    view.addSubview(chatToolsView)
+    
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        UIView.animate(withDuration: 0.25) {
+            self.giftListView.frame.origin.y = KScreenH
+            self.socialShareView.frame.origin.y = KScreenH
+            self.chatToolsView.frame.origin.y = KScreenH
+            self.moreInfoView.frame.origin.y = KScreenH
+        }
+    }
+    
+    
+    
 }
 
 
@@ -135,17 +181,43 @@ extension RoomViewController{
     }
     
     @IBAction func moreItemClick(){
-        
+        UIView.animate(withDuration: 0.25) {
+            self.moreInfoView.frame.origin.y = KScreenH - KMoreInfoViewH
+        }
     }
     
     @IBAction func giftItemClick(){
-        
+        UIView.animate(withDuration: 0.25) {
+            self.giftListView.frame.origin.y = KScreenH - KGiftListViewH
+        }
     }
     
     @IBAction func shareItemClick(){
+        UIView.animate(withDuration: 0.25) {
+            self.socialShareView.frame.origin.y = KScreenH - KSocialShareViewH
+        }
+        self.socialShareView.showShareView()
         
     }
     @IBAction func chatItemClick(){
+         chatToolsView.inputTextField.becomeFirstResponder()
+    }
+    
+    
+    //键盘监听事件
+    @objc func keyboardWillChangeFrame(_ note:NSNotification)  {
+        let duration = note.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let endFrame = (note.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let inputValueY = endFrame.origin.y - KChatToolsViewH
+        
+        UIView.animate(withDuration: duration) {
+              UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
+            self.chatToolsView.frame.origin.y = inputValueY
+            
+        }
+        
+        
+        
         
     }
 }

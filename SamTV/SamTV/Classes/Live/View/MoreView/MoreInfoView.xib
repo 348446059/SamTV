@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreInfoView" customModule="SamTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-VO-WzG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4bT-zL-A9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bop-bD-ulp">
+                                <rect key="frame" x="20" y="10" width="335" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe4-F7-dQQ" customClass="MoreInfoButton" customModule="SamTV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="炫彩飞屏" image="more_btn_flyscreen">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-do-Nyx" customClass="MoreInfoButton" customModule="SamTV" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="83.5" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="广播" image="more_btn_radio">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-X0-75d" customClass="MoreInfoButton" customModule="SamTV" customModuleProvider="target">
+                                        <rect key="frame" x="167.5" y="0.0" width="84" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="发红包" image="more_btn_redbag">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-Ew-4G2" customClass="MoreInfoButton" customModule="SamTV" customModuleProvider="target">
+                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="举报" image="more_btn_report">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bop-bD-ulp" secondAttribute="bottom" constant="10" id="54X-Be-p42"/>
+                            <constraint firstItem="bop-bD-ulp" firstAttribute="top" secondItem="4bT-zL-A9Q" secondAttribute="top" constant="10" id="5gm-fP-qZG"/>
+                            <constraint firstItem="bop-bD-ulp" firstAttribute="leading" secondItem="4bT-zL-A9Q" secondAttribute="leading" constant="20" id="8pw-Ui-utl"/>
+                            <constraint firstAttribute="trailing" secondItem="bop-bD-ulp" secondAttribute="trailing" constant="20" id="GJV-HD-CZq"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vX5-VO-WzG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2in-Fz-VBS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vX5-VO-WzG" secondAttribute="bottom" id="BWh-nA-K8z"/>
+                <constraint firstItem="vX5-VO-WzG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LgT-kd-qjz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vX5-VO-WzG" secondAttribute="trailing" id="eQh-8q-XiN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="32.5" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more_btn_flyscreen" width="25" height="25"/>
+        <image name="more_btn_radio" width="25" height="25"/>
+        <image name="more_btn_redbag" width="25" height="25"/>
+        <image name="more_btn_report" width="25" height="25"/>
+    </resources>
+</document>
