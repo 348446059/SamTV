@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol ChatToolsViewDelegate: class {
+    func chatToolsView(toolView:ChatToolsView,messgae:String)
+}
+
 class ChatToolsView: UIView,NIbLoadable {
 
+    weak var delegate:ChatToolsViewDelegate?
+    
     fileprivate lazy var emoticonBtn:UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
     
-    fileprivate lazy var emoticonView:EmoticonView = EmoticonView(frame:  CGRect(x: 0, y: 0, width: KScreenW, height: 206)) { (emoticon) in
-        
+    fileprivate lazy var emoticonView:EmoticonView = EmoticonView(frame:  CGRect(x: 0, y: 0, width: KScreenW, height: 206)) { [weak self] (emoticon) in
+        self?.insertEmotion(emoticon)
     }
     
     
@@ -23,7 +29,19 @@ class ChatToolsView: UIView,NIbLoadable {
     @IBOutlet weak var sendMsgBtn: UIButton!
     @IBAction func textFieldDidEdit(_ sender: Any) {
     }
-    @IBAction func sendBtnClick(_ sender: Any) {
+    @IBAction func sendBtnClick(_ sender: UIButton) {
+        
+        //1.获取内容
+        let message = inputTextField.text!
+        
+        //2.清空内容
+        inputTextField.text = ""
+        sender.isEnabled = false
+        
+        //3.将内容回调回去
+        delegate?.chatToolsView(toolView: self, messgae: message)
+        
+        
     }
     
     override func awakeFromNib() {
@@ -60,6 +78,23 @@ extension ChatToolsView{
         inputTextField.selectedTextRange = textRange
         
     }
+    
+    fileprivate func insertEmotion(_ emoticon:Emoticon){
+        //1.点击删除按钮
+        if emoticon.emoticonName == "delete-n" {
+            inputTextField.deleteBackward()
+            return
+        }
+        
+        //2.插入文字
+        inputTextField.replace(inputTextField.selectedTextRange!, withText: emoticon.emoticonName)
+        
+    }
+    
+    
+    
+    
+    
 }
 
 

@@ -33,6 +33,12 @@ class GiftListView: UIView,NIbLoadable {
     }
     
     @IBAction func sendGiftBtnClick(_ sender: Any) {
+        
+        let package = GiftViewModel.shareInstance.giftlistData[currentIndexPath!.section]
+        let giftModel = package.list[currentIndexPath!.item]
+        deleagte?.giftListView(giftView: self, giftModel: giftModel)
+        
+        
     }
     
     
@@ -92,7 +98,8 @@ extension GiftListView{
 extension GiftListView:HYPageCollectionViewDelegate,HYPageCollectionViewDataSource{
     
     func pageCollectionView(_ pageCollectionView: HYPageCollectionView, didSelectItemAt indexPath: IndexPath) {
-       
+       currentIndexPath = indexPath
+        sendGiftBtn.isEnabled = true
     }
     
     func numberOfSections(in pageCollectionView: HYPageCollectionView) -> Int {

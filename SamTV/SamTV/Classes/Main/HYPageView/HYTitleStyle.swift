@@ -21,6 +21,8 @@ class HYTitleStyle {
     var titleMargin : CGFloat = 20
     /// 设置titleView的高度
     var titleHeight : CGFloat = 44
+    /// titleView的北京颜色
+    var titleBgColor : UIColor = .clear
     
     /// 是否显示底部滚动条
     var isShowBottomLine : Bool = false

@@ -141,9 +141,11 @@ extension RoomViewController{
     view.addSubview(socialShareView)
     
     giftListView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KGiftListViewH)
+    giftListView.deleagte = self
     view.addSubview(giftListView)
     
     chatToolsView.frame = CGRect(x: 0, y: KScreenH, width: KScreenW, height: KChatToolsViewH)
+    chatToolsView.delegate = self
     view.addSubview(chatToolsView)
     
     }
@@ -170,6 +172,26 @@ extension RoomViewController{
     }
     
 }
+
+//MARK:-聊天回调
+extension RoomViewController:ChatToolsViewDelegate{
+    func chatToolsView(toolView: ChatToolsView, messgae: String) {
+        print(messgae)
+    }
+    
+    
+}
+
+//MARK:-礼物回调
+extension RoomViewController:GiftListViewDelegate{
+    func giftListView(giftView: GiftListView, giftModel: GiftModel) {
+        
+    }
+    
+    
+    
+}
+
 
 // MARK:- 事件监听函数
 extension RoomViewController{

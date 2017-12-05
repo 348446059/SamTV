@@ -79,6 +79,9 @@ class HYTitleView: UIView {
 // MARK:- 设置UI界面内容
 extension HYTitleView {
     fileprivate func setupUI() {
+        //0.设置背景
+        backgroundColor = style.titleBgColor
+        
         // 1.添加Scrollview
         addSubview(scrollView)
         

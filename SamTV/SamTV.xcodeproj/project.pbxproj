@@ -54,6 +54,21 @@
 		0967A7291FD3F832003AF516 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */; };
 		0967A72B1FD3F867003AF516 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72A1FD3F867003AF516 /* libz.tbd */; };
 		0967A72D1FD3F87F003AF516 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */; };
+		0968337F1FD65FF10001F84E /* RankType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968337E1FD65FF10001F84E /* RankType.swift */; };
+		096833811FD660880001F84E /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833801FD660880001F84E /* RankModel.swift */; };
+		096833831FD6611F0001F84E /* WeeklyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833821FD6611F0001F84E /* WeeklyModel.swift */; };
+		096833861FD662EC0001F84E /* SubrankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833851FD662EC0001F84E /* SubrankViewController.swift */; };
+		096833881FD6665F0001F84E /* DetailRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833871FD6665F0001F84E /* DetailRankViewController.swift */; };
+		0968338A1FD666E80001F84E /* WeeklyRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833891FD666E80001F84E /* WeeklyRankViewController.swift */; };
+		0968338C1FD669040001F84E /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968338B1FD669040001F84E /* RankViewController.swift */; };
+		0968338E1FD66A280001F84E /* WeekrankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968338D1FD66A280001F84E /* WeekrankViewController.swift */; };
+		096833901FD66A560001F84E /* NormalRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968338F1FD66A560001F84E /* NormalRankViewController.swift */; };
+		096833931FD66B600001F84E /* WeeklyRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833921FD66B600001F84E /* WeeklyRankViewModel.swift */; };
+		096833951FD6759D0001F84E /* DetailRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833941FD6759D0001F84E /* DetailRankViewModel.swift */; };
+		0968339B1FD6761C0001F84E /* WeeklyRankViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096833971FD6761B0001F84E /* WeeklyRankViewCell.xib */; };
+		0968339C1FD6761C0001F84E /* DetailRankViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096833981FD6761B0001F84E /* DetailRankViewCell.xib */; };
+		0968339D1FD6761C0001F84E /* DetailRankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096833991FD6761B0001F84E /* DetailRankViewCell.swift */; };
+		0968339E1FD6761C0001F84E /* WeeklyRankViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968339A1FD6761B0001F84E /* WeeklyRankViewCell.swift */; };
 		0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */; };
 		0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996847C1FD0EC7500AA02A4 /* ViewController.swift */; };
 		099684801FD0EC7500AA02A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0996847E1FD0EC7500AA02A4 /* Main.storyboard */; };
@@ -120,6 +135,21 @@
 		0967A7281FD3F832003AF516 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		0967A72A1FD3F867003AF516 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0967A72C1FD3F87F003AF516 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0968337E1FD65FF10001F84E /* RankType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankType.swift; sourceTree = "<group>"; };
+		096833801FD660880001F84E /* RankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
+		096833821FD6611F0001F84E /* WeeklyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyModel.swift; sourceTree = "<group>"; };
+		096833851FD662EC0001F84E /* SubrankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubrankViewController.swift; sourceTree = "<group>"; };
+		096833871FD6665F0001F84E /* DetailRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRankViewController.swift; sourceTree = "<group>"; };
+		096833891FD666E80001F84E /* WeeklyRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRankViewController.swift; sourceTree = "<group>"; };
+		0968338B1FD669040001F84E /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		0968338D1FD66A280001F84E /* WeekrankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekrankViewController.swift; sourceTree = "<group>"; };
+		0968338F1FD66A560001F84E /* NormalRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalRankViewController.swift; sourceTree = "<group>"; };
+		096833921FD66B600001F84E /* WeeklyRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRankViewModel.swift; sourceTree = "<group>"; };
+		096833941FD6759D0001F84E /* DetailRankViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRankViewModel.swift; sourceTree = "<group>"; };
+		096833971FD6761B0001F84E /* WeeklyRankViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeeklyRankViewCell.xib; sourceTree = "<group>"; };
+		096833981FD6761B0001F84E /* DetailRankViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailRankViewCell.xib; sourceTree = "<group>"; };
+		096833991FD6761B0001F84E /* DetailRankViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRankViewCell.swift; sourceTree = "<group>"; };
+		0968339A1FD6761B0001F84E /* WeeklyRankViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyRankViewCell.swift; sourceTree = "<group>"; };
 		099684771FD0EC7500AA02A4 /* SamTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996847A1FD0EC7500AA02A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0996847C1FD0EC7500AA02A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +315,49 @@
 			path = IJKPlayer;
 			sourceTree = "<group>";
 		};
+		0968337D1FD65FBA0001F84E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0968337E1FD65FF10001F84E /* RankType.swift */,
+				096833801FD660880001F84E /* RankModel.swift */,
+				096833821FD6611F0001F84E /* WeeklyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		096833841FD662CE0001F84E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				096833851FD662EC0001F84E /* SubrankViewController.swift */,
+				096833871FD6665F0001F84E /* DetailRankViewController.swift */,
+				096833891FD666E80001F84E /* WeeklyRankViewController.swift */,
+				0968338B1FD669040001F84E /* RankViewController.swift */,
+				0968338D1FD66A280001F84E /* WeekrankViewController.swift */,
+				0968338F1FD66A560001F84E /* NormalRankViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		096833911FD66B390001F84E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				096833941FD6759D0001F84E /* DetailRankViewModel.swift */,
+				096833921FD66B600001F84E /* WeeklyRankViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		096833961FD6761B0001F84E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				096833971FD6761B0001F84E /* WeeklyRankViewCell.xib */,
+				096833981FD6761B0001F84E /* DetailRankViewCell.xib */,
+				096833991FD6761B0001F84E /* DetailRankViewCell.swift */,
+				0968339A1FD6761B0001F84E /* WeeklyRankViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0996846E1FD0EC7500AA02A4 = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +479,10 @@
 		099684951FD0F45300AA02A4 /* Rank */ = {
 			isa = PBXGroup;
 			children = (
+				096833961FD6761B0001F84E /* View */,
+				096833911FD66B390001F84E /* ViewModel */,
+				096833841FD662CE0001F84E /* Controller */,
+				0968337D1FD65FBA0001F84E /* Model */,
 				099684A31FD0F76400AA02A4 /* Rank.storyboard */,
 			);
 			path = Rank;
@@ -549,10 +626,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				099684A41FD0F76400AA02A4 /* Rank.storyboard in Resources */,
+				0968339C1FD6761C0001F84E /* DetailRankViewCell.xib in Resources */,
 				099684851FD0EC7500AA02A4 /* LaunchScreen.storyboard in Resources */,
 				091F29FD1FD511270035F949 /* GiftListView.xib in Resources */,
 				099684A91FD0F86C00AA02A4 /* Profile.storyboard in Resources */,
 				095DCE4C1FD24CB000BFAC94 /* types.plist in Resources */,
+				0968339B1FD6761C0001F84E /* WeeklyRankViewCell.xib in Resources */,
 				099684A21FD0F67300AA02A4 /* Home.storyboard in Resources */,
 				0996848C1FD0F28C00AA02A4 /* Assets.xcassets in Resources */,
 				099684801FD0EC7500AA02A4 /* Main.storyboard in Resources */,
@@ -634,6 +713,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096833811FD660880001F84E /* RankModel.swift in Sources */,
+				096833861FD662EC0001F84E /* SubrankViewController.swift in Sources */,
 				095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */,
 				0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */,
 				091F29E71FD4DB8B0035F949 /* EmoticonViewCell.swift in Sources */,
@@ -644,19 +725,27 @@
 				095DCE411FD23FB400BFAC94 /* HYTitleStyle.swift in Sources */,
 				091F29EA1FD4DCA20035F949 /* EmoticonView.swift in Sources */,
 				0996847D1FD0EC7500AA02A4 /* ViewController.swift in Sources */,
+				0968338A1FD666E80001F84E /* WeeklyRankViewController.swift in Sources */,
 				0996847B1FD0EC7500AA02A4 /* AppDelegate.swift in Sources */,
+				0968338C1FD669040001F84E /* RankViewController.swift in Sources */,
 				0967A7261FD3AFFE003AF516 /* RoomViewModel.swift in Sources */,
 				092740DC1FD12F9E00F1A2DA /* HomeViewController.swift in Sources */,
+				096833831FD6611F0001F84E /* WeeklyModel.swift in Sources */,
 				095E85A61FD4DA6800870BF4 /* Emoticon.swift in Sources */,
 				095DCE401FD23FB400BFAC94 /* HYTitleView.swift in Sources */,
 				092740DE1FD131FE00F1A2DA /* SamNavigationController.swift in Sources */,
 				091F29FB1FD511060035F949 /* GiftListView.swift in Sources */,
+				0968337F1FD65FF10001F84E /* RankType.swift in Sources */,
 				095DCE481FD2402D00BFAC94 /* WaterfallLayout.swift in Sources */,
 				095DCE421FD23FB400BFAC94 /* HYPageView.swift in Sources */,
+				0968339D1FD6761C0001F84E /* DetailRankViewCell.swift in Sources */,
+				096833901FD66A560001F84E /* NormalRankViewController.swift in Sources */,
 				095DCE531FD24DF000BFAC94 /* HomeType.swift in Sources */,
 				092740D81FD0FDC800F1A2DA /* NibLoadable.swift in Sources */,
+				0968338E1FD66A280001F84E /* WeekrankViewController.swift in Sources */,
 				091F2A001FD51C810035F949 /* SocialShareView.swift in Sources */,
 				095E859F1FD4D5BB00870BF4 /* UITextField-Extension.swift in Sources */,
+				096833881FD6665F0001F84E /* DetailRankViewController.swift in Sources */,
 				095DCE551FD2547100BFAC94 /* NetworkTools.swift in Sources */,
 				0996849E1FD0F5F400AA02A4 /* RoomViewController.swift in Sources */,
 				095DCE5F1FD29A6F00BFAC94 /* HomeViewCell.swift in Sources */,
@@ -672,7 +761,10 @@
 				092740DA1FD0FEE500F1A2DA /* Emitterable.swift in Sources */,
 				091F29F71FD50BA10035F949 /* GiftViewModel.swift in Sources */,
 				09D403B01FD141BE00C128F1 /* UIColor+Extension.swift in Sources */,
+				096833951FD6759D0001F84E /* DetailRankViewModel.swift in Sources */,
 				091F29EE1FD4E36F0035F949 /* EmoticonViewModel.swift in Sources */,
+				096833931FD66B600001F84E /* WeeklyRankViewModel.swift in Sources */,
+				0968339E1FD6761C0001F84E /* WeeklyRankViewCell.swift in Sources */,
 				09E39F8C1FD52CC200600D8E /* MoreInfoView.swift in Sources */,
 				095DCE441FD23FB400BFAC94 /* HYContentView.swift in Sources */,
 			);

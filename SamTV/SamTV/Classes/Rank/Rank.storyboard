@@ -13,11 +13,11 @@
         <!--排行-->
         <scene sceneID="De7-5C-83d">
             <objects>
-                <viewController id="86K-hm-mVB" sceneMemberID="viewController">
+                <viewController id="86K-hm-mVB" customClass="RankViewController" customModule="SamTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="enc-IC-ccV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="pvE-a5-GQV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="排行" image="ranking-n" selectedImage="ranking-p" id="QN6-mv-TQn"/>
