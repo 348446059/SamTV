@@ -30,6 +30,7 @@ extension RoomviewModel{
             // 3.获取直播的请求地址
             guard let requestURL = msgDict["rUrl"] as? String else { return }
             
+            print(msgDict["rUrl"])
             //4.请求直播地址
             self.loadOnliveURL(requestURL, completion)
             

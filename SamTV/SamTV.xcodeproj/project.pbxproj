@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0919B2B81FDA307A00BF4C68 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2B71FDA307A00BF4C68 /* CarouselModel.swift */; };
+		0919B2BB1FDA30FB00BF4C68 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2BA1FDA30FB00BF4C68 /* CarouselViewModel.swift */; };
+		0919B2BD1FDA33AE00BF4C68 /* DiscoverContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2BC1FDA33AE00BF4C68 /* DiscoverContentViewModel.swift */; };
+		0919B2C01FDA34DB00BF4C68 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2BF1FDA34DB00BF4C68 /* DiscoverViewController.swift */; };
+		0919B2C31FDA3B4D00BF4C68 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2C21FDA3B4D00BF4C68 /* CarouselView.swift */; };
+		0919B2C51FDA3B5F00BF4C68 /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0919B2C41FDA3B5F00BF4C68 /* CarouselView.xib */; };
+		0919B2C71FDA50AE00BF4C68 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2C61FDA50AE00BF4C68 /* DiscoverTableViewCell.swift */; };
+		0919B2C91FDA513500BF4C68 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919B2C81FDA513500BF4C68 /* DiscoverCollectionViewCell.swift */; };
 		091F29E71FD4DB8B0035F949 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29E51FD4DB8B0035F949 /* EmoticonViewCell.swift */; };
 		091F29E81FD4DB8B0035F949 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F29E61FD4DB8B0035F949 /* EmoticonViewCell.xib */; };
 		091F29EA1FD4DCA20035F949 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F29E91FD4DCA20035F949 /* EmoticonView.swift */; };
@@ -88,6 +96,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0919B2B71FDA307A00BF4C68 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
+		0919B2BA1FDA30FB00BF4C68 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		0919B2BC1FDA33AE00BF4C68 /* DiscoverContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverContentViewModel.swift; sourceTree = "<group>"; };
+		0919B2BF1FDA34DB00BF4C68 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		0919B2C21FDA3B4D00BF4C68 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		0919B2C41FDA3B5F00BF4C68 /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		0919B2C61FDA50AE00BF4C68 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		0919B2C81FDA513500BF4C68 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		091F29E51FD4DB8B0035F949 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
 		091F29E61FD4DB8B0035F949 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
 		091F29E91FD4DCA20035F949 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
@@ -187,6 +203,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0919B2B61FDA305200BF4C68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0919B2B71FDA307A00BF4C68 /* CarouselModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0919B2B91FDA30E500BF4C68 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0919B2BA1FDA30FB00BF4C68 /* CarouselViewModel.swift */,
+				0919B2BC1FDA33AE00BF4C68 /* DiscoverContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0919B2BE1FDA34C400BF4C68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0919B2BF1FDA34DB00BF4C68 /* DiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0919B2C11FDA3B2B00BF4C68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0919B2C21FDA3B4D00BF4C68 /* CarouselView.swift */,
+				0919B2C41FDA3B5F00BF4C68 /* CarouselView.xib */,
+				0919B2C61FDA50AE00BF4C68 /* DiscoverTableViewCell.swift */,
+				0919B2C81FDA513500BF4C68 /* DiscoverCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		091F29EF1FD4F81B0035F949 /* GittView */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +492,10 @@
 		099684911FD0F45300AA02A4 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				0919B2C11FDA3B2B00BF4C68 /* View */,
+				0919B2BE1FDA34C400BF4C68 /* Controller */,
+				0919B2B91FDA30E500BF4C68 /* ViewModel */,
+				0919B2B61FDA305200BF4C68 /* Model */,
 				099684A61FD0F7DE00AA02A4 /* Discover.storyboard */,
 			);
 			path = Discover;
@@ -627,6 +683,7 @@
 			files = (
 				099684A41FD0F76400AA02A4 /* Rank.storyboard in Resources */,
 				0968339C1FD6761C0001F84E /* DetailRankViewCell.xib in Resources */,
+				0919B2C51FDA3B5F00BF4C68 /* CarouselView.xib in Resources */,
 				099684851FD0EC7500AA02A4 /* LaunchScreen.storyboard in Resources */,
 				091F29FD1FD511270035F949 /* GiftListView.xib in Resources */,
 				099684A91FD0F86C00AA02A4 /* Profile.storyboard in Resources */,
@@ -715,9 +772,11 @@
 			files = (
 				096833811FD660880001F84E /* RankModel.swift in Sources */,
 				096833861FD662EC0001F84E /* SubrankViewController.swift in Sources */,
+				0919B2BD1FDA33AE00BF4C68 /* DiscoverContentViewModel.swift in Sources */,
 				095DCE5B1FD2982100BFAC94 /* AnchorViewController.swift in Sources */,
 				0967A7231FD393E5003AF516 /* AnimManager.swift in Sources */,
 				091F29E71FD4DB8B0035F949 /* EmoticonViewCell.swift in Sources */,
+				0919B2B81FDA307A00BF4C68 /* CarouselModel.swift in Sources */,
 				095DCE511FD24D3F00BFAC94 /* BaseModel.swift in Sources */,
 				095DCE591FD2934100BFAC94 /* HomeViewModel.swift in Sources */,
 				095DCE571FD2927300BFAC94 /* AnchorModel.swift in Sources */,
@@ -739,6 +798,7 @@
 				095DCE481FD2402D00BFAC94 /* WaterfallLayout.swift in Sources */,
 				095DCE421FD23FB400BFAC94 /* HYPageView.swift in Sources */,
 				0968339D1FD6761C0001F84E /* DetailRankViewCell.swift in Sources */,
+				0919B2C31FDA3B4D00BF4C68 /* CarouselView.swift in Sources */,
 				096833901FD66A560001F84E /* NormalRankViewController.swift in Sources */,
 				095DCE531FD24DF000BFAC94 /* HomeType.swift in Sources */,
 				092740D81FD0FDC800F1A2DA /* NibLoadable.swift in Sources */,
@@ -748,6 +808,8 @@
 				096833881FD6665F0001F84E /* DetailRankViewController.swift in Sources */,
 				095DCE551FD2547100BFAC94 /* NetworkTools.swift in Sources */,
 				0996849E1FD0F5F400AA02A4 /* RoomViewController.swift in Sources */,
+				0919B2C91FDA513500BF4C68 /* DiscoverCollectionViewCell.swift in Sources */,
+				0919B2BB1FDA30FB00BF4C68 /* CarouselViewModel.swift in Sources */,
 				095DCE5F1FD29A6F00BFAC94 /* HomeViewCell.swift in Sources */,
 				095DCE431FD23FB400BFAC94 /* HYPageCollectionView.swift in Sources */,
 				095E85A21FD4D7B400870BF4 /* ChatToolsView.swift in Sources */,
@@ -757,6 +819,7 @@
 				091F29F51FD50A990035F949 /* GiftModel.swift in Sources */,
 				092740D51FD0FD3100F1A2DA /* Const.swift in Sources */,
 				095DCE451FD23FB400BFAC94 /* HYPageCollectionViewLayout.swift in Sources */,
+				0919B2C01FDA34DB00BF4C68 /* DiscoverViewController.swift in Sources */,
 				091F2A051FD520A50035F949 /* MoreInfoButton.swift in Sources */,
 				092740DA1FD0FEE500F1A2DA /* Emitterable.swift in Sources */,
 				091F29F71FD50BA10035F949 /* GiftViewModel.swift in Sources */,
@@ -764,6 +827,7 @@
 				096833951FD6759D0001F84E /* DetailRankViewModel.swift in Sources */,
 				091F29EE1FD4E36F0035F949 /* EmoticonViewModel.swift in Sources */,
 				096833931FD66B600001F84E /* WeeklyRankViewModel.swift in Sources */,
+				0919B2C71FDA50AE00BF4C68 /* DiscoverTableViewCell.swift in Sources */,
 				0968339E1FD6761C0001F84E /* WeeklyRankViewCell.swift in Sources */,
 				09E39F8C1FD52CC200600D8E /* MoreInfoView.swift in Sources */,
 				095DCE441FD23FB400BFAC94 /* HYContentView.swift in Sources */,
