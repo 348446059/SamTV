@@ -86,8 +86,14 @@ extension RoomViewController{
         
         //1.初始化播放器
         let url = URL(string: roomVM.liveURL)
-        player = IJKFFMoviePlayerController(contentURL: url, with: nil)
         
+        //打开硬解码
+        let options = IJKFFOptions.byDefault()
+        options?.setOptionIntValue(1, forKey: "videotoo1box", of: kIJKFFOptionCategoryPlayer)
+        
+        //player = IJKFFMoviePlayerController(contentURL: URL(string: "rtmp://192.168.0.103:1935/rtmplive/demo"), with: options)
+        
+        player = IJKFFMoviePlayerController(contentURL: url, with: options)
         //2.设置播放器View的位置和尺寸
         if anchor?.push == 1 {
             let screenW = UIScreen.main.bounds.width
@@ -97,7 +103,7 @@ extension RoomViewController{
             player?.view.frame = view.bounds
         }
         
-        //3.将view添加到控制器view中
+          //3.将view添加到控制器view中
         bgImageView.insertSubview(player!.view, at: 1)
         
         //4.准备播放
